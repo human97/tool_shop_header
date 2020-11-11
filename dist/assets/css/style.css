@@ -352,15 +352,50 @@ template {
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-style: normal;
-    color: #fff;
-    background: #000 url(/assets/img/page_bg.jpg);
+    color: #000;
+    background: #fff;
     min-height: 100vh;
     text-align: center;
   /* mobile viewport bug fix */
     min-height: -webkit-fill-available;
 }
 
-/*block*/
-body {
-    font-size: 24px;
+/* page */
+.page {
+    max-width: 1170px;
+    width: 100vw;
+    margin: 19px auto;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.up_nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #d9d9d9 1px;
+    width: 930px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    color: #252525;
+}
+
+.up_nav--list {
+    width: 628px;
+}
+
+.up_nav--login {
+    width: 126px;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    cursor: pointer;
 }

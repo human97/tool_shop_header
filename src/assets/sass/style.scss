@@ -15,8 +15,8 @@
 body {
     font-family: $font;
     font-style: normal;
-    color: #fff;
-    background: #000 url(/assets/img/page_bg.jpg);
+    color: #000;
+    background: #fff;
     min-height: 100vh;
     text-align: center;
     
@@ -24,4 +24,5 @@ body {
     min-height: -webkit-fill-available;
 }
 
-@import 'src/assets/sass/blocks/block';
+@import 'src/assets/sass/blocks/page';
+@import 'src/assets/sass/blocks/header';
