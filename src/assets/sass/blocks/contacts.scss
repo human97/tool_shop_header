@@ -1,0 +1,58 @@
+/* contacts */
+
+.contacts {
+    width: 183px;
+    color: #252525;
+
+    &--time {
+        display: flex;
+        justify-content: space-between;
+        font-family: Roboto;
+        font-size: 12px;
+        font-weight: 700;
+
+        &-number {
+            font-weight: 400;
+        }
+    }
+
+    &--tel {
+        border-bottom: 1px solid #d9d9d9;
+        font-family: Roboto;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    &--city {
+        display: flex;
+        justify-content: space-between;
+        font-family: Roboto;
+        font-size: 12px;
+        line-height: 1.2;
+        font-weight: 400;
+
+
+        .change {
+            position: relative;
+            cursor: pointer;
+
+            &:before {
+                content: '';
+                width: 8px;
+                height: 9px;
+                background: url(../img/icons/arrow.svg);
+                position: absolute;
+                left: -12px;
+                top: 2px;
+            }
+
+            &:after {
+                content: '..............';
+                position: absolute;
+                top: 3px;
+                left: 0;
+            }
+        }
+    }
+}

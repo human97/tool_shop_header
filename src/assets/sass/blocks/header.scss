@@ -6,29 +6,7 @@
     
 }
 
-.up_nav {
+.header--wrapper{
     display: flex;
-    justify-content: space-between;
-    border-bottom: solid #d9d9d9 1px;
-    width: 930px;
-    height: 20px;
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 400;
-    color: #252525;
-
-    &--list {
-        width: 628px;
-    }
-
-    &--login {
-        width: 126px;
-    }
-}
-
-.list {
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    cursor: pointer;
+    padding: 21px 0 0;
 }

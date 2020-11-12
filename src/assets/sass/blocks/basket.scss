@@ -1,0 +1,63 @@
+/* basket */
+
+.basket{
+    display: flex;
+    width: 407px;
+    justify-content: space-between;
+
+    &-margin{
+        margin: 0 56px 0 30px;
+    }
+}
+
+.basket--list {
+    width: 135px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #252525;
+
+    & li {
+        list-style: none;
+        cursor: pointer;
+    }
+
+    &-cart {
+        background: url(../img/icons/cart.svg) no-repeat;
+        padding-left: 10px;
+    }
+
+    &-star {
+        background: url(../img/icons/star.svg) no-repeat 4px 0px;
+    }
+
+    &-balance {
+        background: url(../img/icons/balance.svg) no-repeat;
+        padding-left: 10px;
+    }
+}
+
+.basket--preview {
+    width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+
+    & div {
+        border: 1px solid #d9d9d9;
+        cursor: pointer;
+        display: table;
+        width: 72px;
+        height: 72px;
+
+        & div {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+}

@@ -373,6 +373,12 @@ body {
     justify-content: space-between;
 }
 
+.header--wrapper {
+    display: flex;
+    padding: 21px 0 0;
+}
+
+/* up_nav */
 .up_nav {
     display: flex;
     justify-content: space-between;
@@ -398,4 +404,131 @@ body {
     justify-content: space-between;
     list-style-type: none;
     cursor: pointer;
+}
+
+/* banner */
+.banner {
+    width: 253px;
+    height: 70px;
+    background: #e2e2e2;
+}
+
+/* basket */
+.basket {
+    display: flex;
+    width: 407px;
+    justify-content: space-between;
+}
+
+.basket-margin {
+    margin: 0 56px 0 30px;
+}
+
+.basket--list {
+    width: 135px;
+    height: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+    color: #252525;
+}
+
+.basket--list li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.basket--list-cart {
+    background: url(../img/icons/cart.svg) no-repeat;
+    padding-left: 10px;
+}
+
+.basket--list-star {
+    background: url(../img/icons/star.svg) no-repeat 4px 0px;
+}
+
+.basket--list-balance {
+    background: url(../img/icons/balance.svg) no-repeat;
+    padding-left: 10px;
+}
+
+.basket--preview {
+    width: 240px;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.basket--preview div {
+    border: 1px solid #d9d9d9;
+    cursor: pointer;
+    display: table;
+    width: 72px;
+    height: 72px;
+}
+
+.basket--preview div div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* contacts */
+.contacts {
+    width: 183px;
+    color: #252525;
+}
+
+.contacts--time {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.contacts--time-number {
+    font-weight: 400;
+}
+
+.contacts--tel {
+    border-bottom: 1px solid #d9d9d9;
+    font-family: Roboto;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.contacts--city {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.contacts--city .change {
+    position: relative;
+    cursor: pointer;
+}
+
+.contacts--city .change:before {
+    content: '';
+    width: 8px;
+    height: 9px;
+    background: url(../img/icons/arrow.svg);
+    position: absolute;
+    left: -12px;
+    top: 2px;
+}
+
+.contacts--city .change:after {
+    content: '..............';
+    position: absolute;
+    top: 3px;
+    left: 0;
 }
