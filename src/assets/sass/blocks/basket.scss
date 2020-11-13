@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    //font-family: Roboto;
+    font-family: 'robotoregular';
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
@@ -29,16 +29,17 @@
 
     &-cart {
         background: url(../img/icons/cart.svg) no-repeat;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     &-star {
         background: url(../img/icons/star.svg) no-repeat 4px 0px;
+        padding-left: 10px;
     }
 
     &-balance {
         background: url(../img/icons/balance.svg) no-repeat;
-        padding-left: 10px;
+        padding-left: 20px;
     }
 }
 

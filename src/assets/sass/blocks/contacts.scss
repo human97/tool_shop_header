@@ -4,21 +4,23 @@
     width: 183px;
     color: #252525;
     white-space: nowrap;
-    //font-family: Roboto;
 
     &--time {
         display: flex;
         justify-content: space-between;
+        font-family: 'robotobold';
         font-size: 12px;
         font-weight: 700;
 
         &-number {
+            font-family: 'robotoregular';
             font-weight: 400;
         }
     }
 
     &--tel {
         border-bottom: 1px solid #d9d9d9;
+        font-family: 'robotobold';
         font-size: 25px;
         font-weight: 700;
         line-height: 60px;
@@ -27,6 +29,7 @@
     &--city {
         display: flex;
         justify-content: space-between;
+        font-family: 'robotoregular';
         font-size: 12px;
         line-height: 1.2;
         font-weight: 400;
@@ -35,6 +38,11 @@
         .change {
             position: relative;
             cursor: pointer;
+            font-family: 'robotoregular';
+            font-size: 12px;
+            line-height: 1.2;
+            font-weight: 400;
+            color: #333;
 
             &:before {
                 content: '';

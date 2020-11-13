@@ -1,4 +1,5 @@
 /* Default styles */
+@import url(../fonts/roboto/roboto.css);
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -386,6 +387,7 @@ body {
 }
 
 .header--logo-text {
+    font-family: 'robotobold';
     font-size: 12px;
     line-height: 1.2;
     font-weight: 700;
@@ -400,6 +402,7 @@ body {
     border-bottom: solid #d9d9d9 1px;
     width: 930px;
     height: 20px;
+    font-family: 'robotoregular';
     font-size: 12px;
     font-weight: 400;
     color: #252525;
@@ -444,6 +447,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-family: 'robotoregular';
     font-size: 14px;
     font-weight: 400;
     text-decoration: underline;
@@ -457,16 +461,17 @@ body {
 
 .basket--list-cart {
     background: url(../img/icons/cart.svg) no-repeat;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .basket--list-star {
     background: url(../img/icons/star.svg) no-repeat 4px 0px;
+    padding-left: 10px;
 }
 
 .basket--list-balance {
     background: url(../img/icons/balance.svg) no-repeat;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .basket--preview {
@@ -499,16 +504,19 @@ body {
 .contacts--time {
     display: flex;
     justify-content: space-between;
+    font-family: 'robotobold';
     font-size: 12px;
     font-weight: 700;
 }
 
 .contacts--time-number {
+    font-family: 'robotoregular';
     font-weight: 400;
 }
 
 .contacts--tel {
     border-bottom: 1px solid #d9d9d9;
+    font-family: 'robotobold';
     font-size: 25px;
     font-weight: 700;
     line-height: 60px;
@@ -517,6 +525,7 @@ body {
 .contacts--city {
     display: flex;
     justify-content: space-between;
+    font-family: 'robotoregular';
     font-size: 12px;
     line-height: 1.2;
     font-weight: 400;
@@ -525,6 +534,11 @@ body {
 .contacts--city .change {
     position: relative;
     cursor: pointer;
+    font-family: 'robotoregular';
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #333;
 }
 
 .contacts--city .change:before {
@@ -562,6 +576,7 @@ body {
 }
 
 .down_nav--list {
+    font-family: 'robotobold';
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -601,6 +616,7 @@ body {
     border-bottom-right-radius: 10px;
     background: #ffcc00;
     border: none;
+    font-family: 'roboto_bkbold';
     font-size: 14px;
     line-height: 1.2;
     font-weight: 700;

@@ -31,19 +31,22 @@ var path = {
         html: "dist/",
         js: "dist/assets/js/",
         css: "dist/assets/css/",
-        images: "dist/assets/img/"
+        images: "dist/assets/img/",
+        fonts: "dist/assets/fonts/"
     },
     src: {
         html: "src/*.html",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        fonts: "src/assets/fonts/**/*"
     },
     watch: {
         html: "src/**/*.html",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
-        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}"
+        images: "src/assets/img/**/*.{jpg,png,svg,gif,ico}",
+        fonts: "dist/assets/fonts/**/*"
     },
     clean: "./dist"
 }
@@ -134,11 +137,7 @@ function images() {
 }
 
 function fonts() {
-    src(path.src.fonts)
-        .pipe(ttf2woff())
-        .pipe(dest(path.build.fonts));
     return src(path.src.fonts)
-        .pipe(ttf2woff2())
         .pipe(dest(path.build.fonts));
 }
 
@@ -151,9 +150,10 @@ function watchFiles() {
     gulp.watch([path.watch.css], css);
     gulp.watch([path.watch.js], js);
     gulp.watch([path.watch.images], images);
+    gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 
@@ -161,7 +161,6 @@ const watch = gulp.parallel(build, watchFiles, browserSync);
 exports.html = html;
 exports.css = css;
 exports.js = js;
-exports.images = images;
 exports.images = images;
 exports.fonts = fonts;
 exports.clean = clean;
