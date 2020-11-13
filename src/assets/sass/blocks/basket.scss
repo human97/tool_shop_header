@@ -1,11 +1,11 @@
 /* basket */
 
-.basket{
+.basket {
     display: flex;
     width: 407px;
     justify-content: space-between;
 
-    &-margin{
+    &-margin {
         margin: 0 56px 0 30px;
     }
 }
@@ -55,6 +55,10 @@
         display: table;
         width: 72px;
         height: 72px;
+
+        &:hover {
+            border-color: #252525;
+        }
 
         & div {
             display: table-cell;

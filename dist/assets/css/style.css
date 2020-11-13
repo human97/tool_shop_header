@@ -420,7 +420,11 @@ body {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+}
+
+.list li:hover {
     cursor: pointer;
+    color: #7c7c7c;
 }
 
 /* banner */
@@ -487,6 +491,10 @@ body {
     display: table;
     width: 72px;
     height: 72px;
+}
+
+.basket--preview div:hover {
+    border-color: #252525;
 }
 
 .basket--preview div div {
@@ -568,11 +576,8 @@ body {
     width: 1170px;
     height: 34px;
     justify-content: space-between;
-}
-
-.down_nav .clear {
-    width: 24px;
     background: #252525;
+    border-radius: 50px;
 }
 
 .down_nav--list {
@@ -580,7 +585,6 @@ body {
     font-size: 16px;
     font-weight: 700;
     color: #fff;
-    background: #252525;
 }
 
 .down_nav--list li {
@@ -599,8 +603,8 @@ body {
 .down_nav--search {
     cursor: pointer;
     width: 45px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
     background: #ffcc00;
     border: none;
 }
@@ -612,8 +616,8 @@ body {
 
 .down_nav--sale {
     cursor: pointer;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
     background: #ffcc00;
     border: none;
     font-family: 'roboto_bkbold';
