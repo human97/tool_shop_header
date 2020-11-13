@@ -1,12 +1,28 @@
 /* header */
 
 .header {
+    height: 194px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    
+
 }
 
-.header--wrapper{
+.wrapper_flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header--wrapper {
     display: flex;
     padding: 21px 0 0;
+}
+
+.header--logo-text {
+    //font-family: HeliosCond;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
